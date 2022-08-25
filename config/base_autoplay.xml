@@ -16,7 +16,7 @@
     <stream>
         <!-- metadata used for stream listing (not currently used) -->
         <metadata>
-            <name>My Syndication Service</name>
+            <name>BASE Syndication Service</name>
             <genre>content_genre</genre>
             <description>A short description of your stream</description>
         </metadata>
