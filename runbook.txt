@@ -1,0 +1,9 @@
+Install:
+
+libogg0, libogg-dev (available at www.vorbis.com)
+libvorbis-dev (available at www.vorbis.com)
+libxml2 (available at xmlsoft)
+libshout-dev (available at The Icecast site)
+mpg321
+vorbis-tools
+ices2

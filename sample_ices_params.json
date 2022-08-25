@@ -1,0 +1,7 @@
+{
+"stream_server_ip": "localhost",
+"stream_server_port": 8000,
+"stream_server_user": "username",
+"stream_server_pw": "password",
+"mountpoint": "mount_point"
+}

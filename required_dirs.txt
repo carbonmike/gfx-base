@@ -1,0 +1,8 @@
+config
+data
+logs
+media
+temp_scripts
+templates
+inputs
+tempdata

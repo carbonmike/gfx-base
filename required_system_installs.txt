@@ -1,0 +1,8 @@
+libogg0
+libogg-dev
+libvorbis-dev
+libxml2
+libshout-dev
+mpg321
+vorbis-tools
+ices2

@@ -1,0 +1,14 @@
+<icecast>
+    <listen-socket>
+        <port>8000</port>
+        <bind-address>0.0.0.0</bind-address> <!-- Listen on all interfaces -->
+    </listen-socket>
+
+    <mount>
+        <mount-name>/syndicated</mount-name>
+        <username>radmin</username>
+        <password>notobvious</password>
+        <max-listeners>0</max-listeners>
+    </mount>
+</icecast>
+
