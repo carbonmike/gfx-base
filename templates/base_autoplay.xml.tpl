@@ -32,7 +32,7 @@
         <input>
             <module>playlist</module>
             <param name="type">basic</param>
-            <param name="file">data/gloss_playlist.txt</param>
+            <param name="file">{playlist_file}</param>
             <!-- random play -->
             <param name="random">0</param>
             <!-- if the playlist get updated that start at the beginning -->

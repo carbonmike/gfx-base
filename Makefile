@@ -23,12 +23,12 @@ install-reqs:
 
 gen-icecast-config:
 	warp --py --template-file=templates/icecast_config.xml.tpl \
-	--params=mountname:syndication/ddoran,src_client_user:$$STREAM_USER,src_client_pw:$$STREAM_PW,max_listeners:0 \
+	--params=mountname:$$MOUNTNAME,src_client_user:$$STREAM_USER,src_client_pw:$$STREAM_PW,max_listeners:0 \
 	> config/broadcast_config.xml
 
 
 gen-ices-config:
-	cat tempdata/ices_params.json | warp --py template-file=templates/base_autoplay.xml.tpl -s \
+	cat tempdata/ices_params.json | warp --py --template-file=templates/base_autoplay.xml.tpl -s \
 	> config/base_autoplay.xml
 	
 
@@ -68,6 +68,10 @@ pipeline-convert-mp3:
 	mv inputs/*.ogg media/
 
 
+# execute this target to spin up a playlist based on our existing (sample)
+# media files.
+# File format is ogg-vorbis; MP3 files must be transcoded before adding to the rotation.
+#
 pipeline-update-playlist:
 	ls media/*.ogg > tempdata/base_playlist.txt
 
